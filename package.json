@@ -1,0 +1,14 @@
+{
+  "name": "ma-xim--fixture--grammar",
+  "version": "0.1.0",
+  "description": "Syntax for intelligent fixture profiles on the LSC maXim desk",
+  "keywords": [
+    "grammar",
+    "lighting"
+  ],
+  "repository": "https://github.com/atom/ma-xim--fixture--grammar",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  }
+}

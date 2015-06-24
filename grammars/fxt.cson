@@ -1,0 +1,43 @@
+# If this is your first time writing a language grammar, check out:
+#   - http://manual.macromates.com/en/language_grammars
+
+'scopeName': 'source.fxt';
+'name': 'maXim fixture profiles';
+'fileTypes': ['fxt'];
+
+'patterns': [
+  {
+    'begin': '^\\s*(//).*$'
+    'name': 'comment.fxt'
+  }
+  {
+    'match': 'fixture'
+    'name': 'markup.heading.fxt'
+  }
+  {
+    'begin': '\('
+    'end': '\)'
+    'name': 'markup.bold.fxt'
+  }
+  {
+    'match': '\b(attribute|parameter)\b'
+    'name': 'entity.name.type.fxt'
+  }
+  {
+    'match': '\b(manufacturer|name|version|channel|fineChan|homeVal|displayerNum|type|attribList|stop)\b'
+    'name': 'keyword.fxt'
+  }
+  {
+    'match': '\$[0-9_]+'
+    'name': 'constant.numeric.fxt'
+  }
+  {
+    'match': '\b( F| N| C| B|,D,|,N,|,1,|,2,)\b'
+    'name': 'constant.character.fxt'
+  }
+  {
+    'begin': '\"'
+    'end': '\"'
+    'name': 'string.quoted.double.fxt'
+  }
+]
